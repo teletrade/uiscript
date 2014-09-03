@@ -22,7 +22,7 @@ You're now ready to write some uiscript. Your code should be inserted in a `<scr
 
 - [x] move `<code>` to `<script>`
 
-- [x] change syntax to rx-style `on {action} "{source}" {reaction} {attribute} "{value}" to "{target}"`
+- [x] change syntax to rx-style `on {event} "{source}" {reaction} {attribute} "{value}" to "{target}"`
 
 - [x] support multiple class values
 
@@ -56,8 +56,8 @@ Let's deconstruct the syntax from our previous example:
 
 ```html
 <script type="text/uiscript">
-  on {action} "{source}" {reaction} {attribute} "{value}"
-  on {action} "{source}" {reaction} {attribute} "{value}" to "{target}"
+  on {event} "{source}" {reaction} {attribute} "{value}"
+  on {event} "{source}" {reaction} {attribute} "{value}" to "{target}"
 </script>
 ```
 1. Any CSS selector.
