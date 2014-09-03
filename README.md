@@ -1,4 +1,4 @@
-# uiscript
+# uiscript (in progress)
 
 uiscript is a simple programming language for web designers.
 With uiscript, you write your code just like plain English, straight into your HTML using a `<script>` element. uiscript's logic relies on manipulating classes on HTML elements and using these classes in CSS to show, hide, animate and transform elements when a click occurs. This simple logic lets designers create most of the typical user interface behaviours: tabs, popovers, overlays, sliding menus, etc.
@@ -19,10 +19,15 @@ You're now ready to write some uiscript. Your code should be inserted in a `<scr
 ```
 
 ## Fork changelog
+
 [x] move `<code>` to `<script>`
+
 [x] change syntax to rx-style `on {action} "{source}" {reaction} {attribute} "{value}" to "{target}"`
+
 [x] support multiple classes
+
 [ ] adds support for events
+
 ```html
     var events = { 
         'click': 'click', 
@@ -42,6 +47,7 @@ You're now ready to write some uiscript. Your code should be inserted in a `<scr
       }
 ```
 [ ] add support to other attributes
+
 [ ] optional quotes in syntax
 
 ## Syntax
