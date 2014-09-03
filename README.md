@@ -70,10 +70,11 @@ You can add as many instructions as you want into your `<script>` element (and m
 ## Examples (from jsFiddle, in progress)
 
 * [jsFiddle: Simple notification banner](http://jsfiddle.net/q90pg96k/)
-* [jsFiddle: Animated switch] ()
+* [jsFiddle: Animated switch] (http://jsfiddle.net/nxLp5wv6/)
 * [jsFiddle: Navigation popover] ()
 * [jsFiddle: Tabs] ()
-* * [jsFiddle: Tabs] ()
+* [jsFiddle: Accordion] ()
+* [jsFiddle: Overlay] ()
 
 ## Examples (for original uilang)
 
