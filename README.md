@@ -52,22 +52,14 @@ Comments is also supported:
 - [x] support multiple class values
 - [ ] adds support for more events and actions
 ```html
-var events = [ 
-/* mouse events */
-    'click', 'context menu', { 'double click': 'dblclick' }, 'mouse down', 'mouse enter', 'mouse leave', 'mouse move', 'mouse over', 'mouse out', 'mouse up',
-/* keyboard events */
-    'key down', 'key press', 'key up',
-/* object events */
-   'abort', 'error', 'hash change', 'load', 'resize', 'scroll', 'unload',
-/* form events */
-    'blur', 'change', 'focus', 'focus in', 'focus out', 'input', 'reset', 'search', 'select', 'submit',
-/* clipboard events */
-    'copy', 'cut', 'paste',
-/* print events */
-    'after print', 'before print',
-/* media events */
-    'can play', 'can play through', 'duration change', 'emptied', 'ended', 'loaded data', 'loaded metadata', 'load start', 'pause', 'play', 'playing', 'progress', 'rate change', 'seeked', 'seeking', 'stalled', 'suspend', 'time update', 'volume change', 'waiting'
-]
+var mouseEvents = "click,context menu,mouse down,mouse enter,mouse leave,mouse move,mouse over,mouse out,mouse up";
+var keyboardEvents = "key down,key press,key up";
+var objectEvents = "abort,error,hash change,load,resize,scroll,unload";
+var formEvents = "blur,change,focus,focus in,focus out,input,reset,search,select,submit";
+var clipboardEvents = "copy,cut,paste";
+var printEvents = "after print,before print";
+var mediaEvents = "can play,can play through,duration change,emptied,ended,loaded data,loaded metadata,load start,pause,play,playing,progress,rate change,seeked,seeking,stalled,suspend,time update,volume change,waiting";
+var defaults = { "double click": "dblclick" };
 ```
 - [ ] add support to other attributes
 - [ ] optional quotes in syntax
