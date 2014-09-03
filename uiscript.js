@@ -69,13 +69,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
         forEach(params.source, function (element) {
             element.addEventListener(params.event, function (event) {
-                if (event.target.nodeName == "A") {
-                    event.preventDefault();
-                }
                 if (!params.target) {
                     update(event.target); 
                 } else {
                     forEach(params.target, update);
+                }
+                if (event.target.nodeName == "A") {
+                    event.preventDefault();
                 }
             })
         })
