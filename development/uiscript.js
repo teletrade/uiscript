@@ -6,22 +6,20 @@ document.addEventListener("DOMContentLoaded", function () {
     "use strict";
 
     function forEach(selector, callback) {
-        Array.prototype.forEach.call(document.querySelectorAll(selector), callback);
+        Array.prototype.forEach.call(document.querySelectorAll(selector), callback)
     }
 
     function toObject(keys, values) {
         return keys.reduce(function (obj, key, index) {
-            obj[key] = values[index];
-            return obj;
+            return obj[key] = values[index], obj
         }, {});
     }
 
     function parse(text) {
         var keys = ["action", "source", "reaction", "attribute", "value", "target"];
-      var regexp = /on\s+(\w+)\s+"([^"]+)"\s+(\w+)\s+(\w+)\s+"([^"]+)"(?:\s+to\s+"([^"]+)")?/;
+        var regexp = /on\s+(\w+)\s+"([^"]+)"\s+(\w+)\s+(\w+)\s+"([^"]+)"(?:\s+to\s+"([^"]+)")?/;
         var values = regexp.exec(text) || [];
-        values.shift();
-        return toObject(keys, values);
+        return toObject(keys, values.slice(1));
     }
 
     function instruction(text) {
