@@ -1,4 +1,4 @@
-# uiscript (in progress)
+# uiscript (fork from [uilang](https://github.com/bendc/uilang))
 
 uiscript is a simple programming language for web designers.
 With uiscript, you write your code just like plain English, straight into your HTML using a `<script>` element. uiscript's logic relies on manipulating classes on HTML elements and using these classes in CSS to show, hide, animate and transform elements when a click occurs. This simple logic lets designers create most of the typical user interface behaviours: tabs, popovers, overlays, sliding menus, etc.
