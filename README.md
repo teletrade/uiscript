@@ -67,6 +67,10 @@ Let's deconstruct the syntax from our previous example:
 
 You can add as many instructions as you want into your `<script>` element (and many `<script>` element as you want):
 
+## Examples (from jsFiddle, in progress)
+
+* [Simple notification banner](http://jsfiddle.net/q90pg96k/)
+
 ## Examples (for original uilang)
 
 * [Simple gallery](http://demos.uilang.com/gallery/)
