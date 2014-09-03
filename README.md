@@ -4,7 +4,7 @@ uiscript is a simple event-driven language for web designers, just write your co
 
 When click occurs change CSS classes to show, hide, animate and transform elements.
 
-This simple logic lets you create most of the typical user interface behaviours: tabs, popovers, overlays, sliding menus, etc.
+This simple logic lets you create most of the typical behaviours: tabs, popovers, overlays, sliding menus, etc.
 
 ## Getting started
 
