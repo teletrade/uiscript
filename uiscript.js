@@ -1,5 +1,11 @@
 /*
  * uiscript v0.1
+ * on {event} "{source}" {action} {attribute} "{value}" to "{target}"
+ *
+ * var s = '\\s+'; // space
+ * var w = '(\\w+)'; // word
+ * var v = '"([^"]+)"'; // value
+ * var regexp = new RegExp('on' + s + w + s + v + s + w + s + w + s + v + '(?:' + s + 'to' + s + v + ')?');
  */
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -15,13 +21,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }, {})
     }
 
-/**
- * var s = '\\s+'; // space
- * var w = '(\\w+)'; // word
- * var v = '"([^"]+)"'; // value
- * var regexp = new RegExp('on' + s + w + s + v + s + w + s + w + s + v + '(?:' + s + 'to' + s + v + ')?');
- * on {event} "{source}" {action} {attribute} "{value}" to "{target}"
- */
     function parse(text) {
         var keys = "event source action attribute value target";
         var regexp = /on\s+(\w+)\s+"([^"]+)"\s+(\w+)\s+(\w+)\s+"([^"]+)"(?:\s+to\s+"([^"]+)")?/;
