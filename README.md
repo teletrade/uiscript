@@ -56,22 +56,22 @@ Comments is also supported:
 - [ ] adds support for more events and actions
 
 ```html
-    var events = { 
-        'click': 'click', 
-        'context menu': 'contextmenu',
-        'double click': 'dblclick',
-        'mouse down': 'mousedown',
-        'mouse up': 'mouseup',
-        'mouse enter': 'mouseenter',
-        'mouse leave': 'mouseleave',
-        'mouse over': 'mouseover',
-        'mouse out': 'mouseout',
-        'input blur': 'blur',
-        'input change': 'change',
-        'input focus': 'focus',
-        'form reset': 'reset',
-        'form submit': 'submit'
-      }
+var events = [ 
+/* mouse events */
+    'click', 'context menu', { 'double click': 'dblclick' }, 'mouse down', 'mouse enter', 'mouse leave', 'mouse move', 'mouse over', 'mouse out', 'mouse up',
+/* keyboard events */
+    'key down', 'key press', 'key up',
+/* object events */
+   'abort', 'error', 'hash change', 'load', 'resize', 'scroll', 'unload',
+/* form events */
+    'blur', 'change', 'focus', 'focus in', 'focus out', 'input', 'reset', 'search', 'select', 'submit',
+/* clipboard events */
+    'copy', 'cut', 'paste',
+/* print events */
+    'after print', 'before print',
+/* media events */
+    'can play', 'can play through', 'duration change', 'emptied', 'ended', 'loaded data', 'loaded metadata', 'load start', 'pause', 'play', 'playing', 'progress', 'rate change', 'seeked', 'seeking', 'stalled', 'suspend', 'time update', 'volume change', 'waiting'
+]
 ```
 - [ ] add support to other attributes
 
