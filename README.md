@@ -1,20 +1,45 @@
 # uiscript (fork from [uilang](https://github.com/bendc/uilang))
 
-uiscript is a simple programming language for web designers.
-With uiscript, you write your code just like plain English, straight into your HTML using a `<script>` element. uiscript's logic relies on manipulating classes on HTML elements and using these classes in CSS to show, hide, animate and transform elements when a click occurs. This simple logic lets designers create most of the typical user interface behaviours: tabs, popovers, overlays, sliding menus, etc.
+uiscript is a simple programming language for web designers, write your code like plain English.
+It is event-driven: when a click occurs you can change CSS classes and show, hide, animate and transform elements.
+This simple logic lets you create most of the typical user interface behaviours: tabs, popovers, overlays, sliding menus, etc.
 
 ## Getting started
 
-Include `uiscript.js` on your page:
+Include `uiscript.js` or `uiscript.min.js` on your page (it's less than 1 KB):
 
 ```html
 <script src="uiscript.js"></script>
 ```
-You're now ready to write some uiscript. Your code should be inserted in a `<script>` element with a `type` attribute, anywhere in the page. The syntax looks like this:
+
+Insert a `<script>` element with a `type="text/uiscript"` attribute. Write some uiscript:
 
 ```html
 <script type="text/uiscript">
   on click "#source" add class "hidden" to ".target"
+</script>
+```
+
+## Syntax
+
+Syntax is pretty simple:
+
+```html
+  on {event} "{source}" {reaction} {attribute} "{value}"
+  on {event} "{source}" {reaction} {attribute} "{value}" to "{target}"
+```
+1. Support different events: click (other in progress)
+2. Source is any CSS selector.
+3. Support simple class manipulations `add`, `remove` or `toggle` (other in progress)
+4. Support different attributes: class (other planned)
+5. Target is any CSS selector or nothing (which apply reaction to current element)
+
+You can add as many instructions as you want into your `<script>` element (and many `<script>` element as you want)
+Comments is also supported:
+```html
+<!-- I'm a comment. -->
+<script type="text/uiscript">
+  on click ".hide" add class "hidden" to "div"
 </script>
 ```
 
@@ -26,7 +51,7 @@ You're now ready to write some uiscript. Your code should be inserted in a `<scr
 
 - [x] support multiple class values
 
-- [ ] adds support for events
+- [ ] adds support for more events and reactions
 
 ```html
     var events = { 
@@ -49,23 +74,6 @@ You're now ready to write some uiscript. Your code should be inserted in a `<scr
 - [ ] add support to other attributes
 
 - [ ] optional quotes in syntax
-
-## Syntax
-
-Let's deconstruct the syntax from our previous example:
-
-```html
-<script type="text/uiscript">
-  on {event} "{source}" {reaction} {attribute} "{value}"
-  on {event} "{source}" {reaction} {attribute} "{value}" to "{target}"
-</script>
-```
-1. Any CSS selector.
-2. `add`, `remove` or `toggle`.
-3. Any class name.
-4. Any CSS selector or nothing (which selects the clicked element).
-
-You can add as many instructions as you want into your `<script>` element (and many `<script>` element as you want):
 
 ## Examples ([Original](http://uilang.com/))
 
