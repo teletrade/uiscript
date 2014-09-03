@@ -48,13 +48,9 @@ Comments is also supported:
 ## Fork changelog
 
 - [x] move `<code>` to `<script>`
-
 - [x] change syntax to rx-style `on {event} "{source}" {action} {attribute} "{value}" to "{target}"`
-
 - [x] support multiple class values
-
 - [ ] adds support for more events and actions
-
 ```html
 var events = [ 
 /* mouse events */
@@ -74,10 +70,10 @@ var events = [
 ]
 ```
 - [ ] add support to other attributes
-
 - [ ] optional quotes in syntax
+- [ ] optional values for attributes
 
-## Examples ([Original](http://uilang.com/))
+## Examples ([original](http://uilang.com/))
 
 * [jsFiddle: Simple notification banner](http://jsfiddle.net/L9kaoo62/)
 * [jsFiddle: Animated switch] (http://jsfiddle.net/cm6uow15/)
@@ -88,7 +84,7 @@ var events = [
 
 ## Demos
 
-* [jsFiddle: Simple gallery](http://jsfiddle.net/8n9hwrbj/) ([Original] (http://demos.uilang.com/gallery/))
-* [jsFiddle: Hamburger menu](http://jsfiddle.net/8xnp67g7/) ([Original] (http://demos.uilang.com/hamburger-menu/))
-* [jsFiddle: Looping Keynote-like presentation](http://jsfiddle.net/jf2Lxpat/) ([Original] (http://demos.uilang.com/keynote/))
-* [jsFiddle: Sliding panels](http://jsfiddle.net/exrjL8pt/) ([Original] (http://demos.uilang.com/sliding-panels/))
+* [jsFiddle: Simple gallery](http://jsfiddle.net/8n9hwrbj/) ([original] (http://demos.uilang.com/gallery/))
+* [jsFiddle: Hamburger menu](http://jsfiddle.net/8xnp67g7/) ([original] (http://demos.uilang.com/hamburger-menu/))
+* [jsFiddle: Looping Keynote-like presentation](http://jsfiddle.net/jf2Lxpat/) ([original] (http://demos.uilang.com/keynote/))
+* [jsFiddle: Sliding panels](http://jsfiddle.net/exrjL8pt/) ([original] (http://demos.uilang.com/sliding-panels/))
