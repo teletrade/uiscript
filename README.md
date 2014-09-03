@@ -19,7 +19,7 @@ You're now ready to write some uiscript. Your code should be inserted in a `<scr
 ```
 
 ## Fork changelog
-[x] move <code> to <script>
+[x] move `<code>` to `<script>`
 [x] change syntax to rx-style
 ```html
   on {action} "{source}" {reaction} {attribute} "{value}" to "{target}"
