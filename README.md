@@ -14,7 +14,9 @@ Include [uiscript.js](https://rawgit.com/qweek/uiscript/master/uiscript.js) or [
 <script src="uiscript.js"></script>
 ```
 
-Insert a `<script>` element with a `type="text/uiscript"` attribute. Write some uiscript:
+Insert a `<script>` element with a `type="text/uiscript"` attribute.
+
+Write some uiscript:
 
 ```html
 <script type="text/uiscript">
