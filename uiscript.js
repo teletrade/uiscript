@@ -3,9 +3,10 @@
  * on {event} "{source}" {action} {attribute} "{value}" to "{target}"
  *
  * var s = '\\s+'; // space
+ * var e = '(' + Object.keys(events).join('|') + ')'; // events
  * var w = '(\\w+)'; // word
  * var v = '"([^"]+)"'; // value
- * var regexp = new RegExp('on' + s + w + s + v + s + w + s + w + s + v + '(?:' + s + 'to' + s + v + ')?');
+ * var regexp = new RegExp('on' + s + e + s + v + s + w + s + w + s + v + '(?:' + s + 'to' + s + v + ')?');
  */
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -19,6 +20,23 @@ document.addEventListener("DOMContentLoaded", function () {
         return keys.reduce(function (obj, key, index) {
             return obj[key] = values[index], obj
         }, {})
+    }
+    
+    function getEvents() {
+        var mouseEvents = "click,context menu,mouse down,mouse enter,mouse leave,mouse move,mouse over,mouse out,mouse up";
+        var keyboardEvents = "key down,key press,key up";
+        var objectEvents = "abort,error,hash change,load,resize,scroll,unload";
+        var formEvents = "blur,change,focus,focus in,focus out,input,reset,search,select,submit";
+        var clipboardEvents = "copy,cut,paste";
+        var printEvents = "after print,before print";
+        var mediaEvents = "can play,can play through,duration change,emptied,ended,loaded data,loaded metadata,load start,pause,play,playing,progress,rate change,seeked,seeking,stalled,suspend,time update,volume change,waiting";
+        var events = [mouseEvents, keyboardEvents, objectEvents, formEvents, clipboardEvents, printEvents, mediaEvents].join(",");
+        
+        var defaults = { "double click": "dblclick" };
+    
+        return events.split(",").reduce(function (obj, event) {
+            return obj[event] = event.replace(/\s+/, ''), obj
+        }, defaults);
     }
 
     function parse(instruction) {
