@@ -8,7 +8,7 @@ With uiscript, you write your code just like plain English, straight into your H
 Include `uiscript.js` on your page:
 
 ```html
-<script src=uiscript.js></script>
+<script src="uiscript.js"></script>
 ```
 You're now ready to write some uiscript. Your code should be inserted in a `<script>` element with a `type` attribute, anywhere in the page. The syntax looks like this:
 
