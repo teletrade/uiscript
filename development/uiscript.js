@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function parse(text) {
-        var keys = ["action", "source", "reaction", "attribute", "value", "target"];
+        var keys = ["event", "source", "reaction", "attribute", "value", "target"];
         var regexp = /on\s+(\w+)\s+"([^"]+)"\s+(\w+)\s+(\w+)\s+"([^"]+)"(?:\s+to\s+"([^"]+)")?/;
         var values = regexp.exec(text) || [];
         return toObject(keys, values.slice(1))
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         forEach(params.source, function (element) {
-            element.addEventListener(params.action, function (event) {
+            element.addEventListener(params.event, function (event) {
                 switch (params.target) {
                     case undefined:
                         react(event.target);
