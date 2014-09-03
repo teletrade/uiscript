@@ -21,18 +21,18 @@ document.addEventListener("DOMContentLoaded", function () {
         }, {})
     }
 
-    function parse(text) {
+    function parse(instruction) {
         var keys = "event source action attribute value target";
         var regexp = /on\s+(\w+)\s+"([^"]+)"\s+(\w+)\s+(\w+)\s+"([^"]+)"(?:\s+to\s+"([^"]+)")?/;
-        var values = regexp.exec(text);
-        if (!values) throw new Error("Invalid instruction '" + text + "'")
+        var values = regexp.exec(instruction);
+        if (!values) throw new Error("Invalid instruction '" + instruction + "'")
         return toObject(keys.split(" "), values.slice(1))
     }
 
-    function evaluate(instruction) {
-        if (!instruction || instruction.indexOf("//") == 0) return;
+    function evaluate(text) {
+        if (!text || text.indexOf("//") == 0) return;
         
-        var params = parse(instruction);
+        var params = parse(text);
          
         function update(element) {
             switch (params.attribute) {
