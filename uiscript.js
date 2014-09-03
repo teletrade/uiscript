@@ -23,7 +23,6 @@ document.addEventListener("DOMContentLoaded", function () {
  * on {event} "{source}" {action} {attribute} "{value}" to "{target}"
  */
     function parse(text) {
-        if (!text) return;
         var keys = "event source action attribute value target";
         var regexp = /on\s+(\w+)\s+"([^"]+)"\s+(\w+)\s+(\w+)\s+"([^"]+)"(?:\s+to\s+"([^"]+)")?/;
         var values = regexp.exec(text);
@@ -31,7 +30,11 @@ document.addEventListener("DOMContentLoaded", function () {
         return toObject(keys.split(" "), values.slice(1))
     }
 
-    function evaluate(params) {
+    function evaluate(instruction) {
+        if (!instruction || instruction.indexOf("//") == 0) return;
+        
+        var params = parse(instruction);
+         
         function update(element) {
             switch (params.attribute) {
                 case "class":
@@ -60,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     forEach('script[type="text/uiscript"]', function (script) {
         script.text.trim().split("\n").forEach(function (line) {
-            evaluate(parse(line.trim()))
+            evaluate(line.trim())
         })
     })
 })
