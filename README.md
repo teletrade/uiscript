@@ -74,7 +74,7 @@ You can add as many instructions as you want into your `<script>` element (and m
 * [jsFiddle: Navigation popover] (http://jsfiddle.net/rqeypoxe/)
 * [jsFiddle: Tabs] (http://jsfiddle.net/9r52k3kf/)
 * [jsFiddle: Accordion] (http://jsfiddle.net/oez7qh3d/)
-* [jsFiddle: Overlay] ()
+* [jsFiddle: Overlay] (http://jsfiddle.net/3gmkkzes/)
 
 ## Examples (for original uilang)
 
