@@ -76,11 +76,11 @@ You can add as many instructions as you want into your `<script>` element (and m
 * [jsFiddle: Accordion] (http://jsfiddle.net/oez7qh3d/)
 * [jsFiddle: Overlay] (http://jsfiddle.net/3gmkkzes/)
 
-## Examples (for original uilang)
+## Demos
 
 * [jsFiddle: Simple gallery](http://jsfiddle.net/oho4b949/) ([Original] (http://demos.uilang.com/gallery/))
 * [jsFiddle: Hamburger menu](http://jsfiddle.net/d5bxb5ac/) ([Original] (http://demos.uilang.com/hamburger-menu/))
-* [Looping Keynote-like presentation](http://demos.uilang.com/keynote/)
+* [jsFiddle: Looping Keynote-like presentation](http://jsfiddle.net/qznt3ohd/) ([Original] (http://demos.uilang.com/keynote/))
 * [Sliding panels](http://demos.uilang.com/sliding-panels/)
 
 You'll find more examples on [uilang.com](http://uilang.com).
