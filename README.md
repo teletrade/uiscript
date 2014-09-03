@@ -81,6 +81,4 @@ You can add as many instructions as you want into your `<script>` element (and m
 * [jsFiddle: Simple gallery](http://jsfiddle.net/oho4b949/) ([Original] (http://demos.uilang.com/gallery/))
 * [jsFiddle: Hamburger menu](http://jsfiddle.net/d5bxb5ac/) ([Original] (http://demos.uilang.com/hamburger-menu/))
 * [jsFiddle: Looping Keynote-like presentation](http://jsfiddle.net/qznt3ohd/) ([Original] (http://demos.uilang.com/keynote/))
-* [Sliding panels](http://demos.uilang.com/sliding-panels/)
-
-You'll find more examples on [uilang.com](http://uilang.com).
+* [jsFiddle: Sliding panels](http://jsfiddle.net/3k5v96dg/) ([Original] (http://demos.uilang.com/sliding-panels/))
