@@ -20,13 +20,13 @@ You're now ready to write some uiscript. Your code should be inserted in a `<scr
 
 ## Fork changelog
 
-[x] move `<code>` to `<script>`
+- [x] move `<code>` to `<script>`
 
-[x] change syntax to rx-style `on {action} "{source}" {reaction} {attribute} "{value}" to "{target}"`
+- [x] change syntax to rx-style `on {action} "{source}" {reaction} {attribute} "{value}" to "{target}"`
 
-[x] support multiple classes
+- [x] support multiple classes
 
-[ ] adds support for events
+- [ ] adds support for events
 
 ```html
     var events = { 
@@ -46,9 +46,9 @@ You're now ready to write some uiscript. Your code should be inserted in a `<scr
         'form submit': 'submit'
       }
 ```
-[ ] add support to other attributes
+- [ ] add support to other attributes
 
-[ ] optional quotes in syntax
+- [ ] optional quotes in syntax
 
 ## Syntax
 
