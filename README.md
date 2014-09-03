@@ -21,6 +21,12 @@ Insert a `<script>` element with a `type="text/uiscript"` attribute. Write some 
   on click "#source" add class "hidden" to ".target"
 </script>
 ```
+or simple
+```html
+<script type="text/uiscript">
+  on click #source add class hidden to .target
+</script>
+```
 
 ## Syntax
 
@@ -51,6 +57,7 @@ Comments is also supported:
 - [x] change `<!--comments-->` to `//comments`
 - [x] change syntax to rx-style `on {event} "{source}" {action} {attribute} "{value}" to "{target}"`
 - [x] support multiple class values
+- [x] optional quotes in syntax
 - [ ] adds support for more events and actions
 ```html
 var mouseEvents = "click,context menu,mouse down,mouse enter,mouse leave,mouse move,mouse over,mouse out,mouse up";
@@ -63,7 +70,6 @@ var mediaEvents = "can play,can play through,duration change,emptied,ended,loade
 var defaults = { "double click": "dblclick" };
 ```
 - [ ] add support to other attributes
-- [ ] optional quotes in syntax
 - [ ] optional values for attributes
 
 ## Examples ([original](http://uilang.com/))
