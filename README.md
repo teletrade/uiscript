@@ -67,7 +67,7 @@ Let's deconstruct the syntax from our previous example:
 
 You can add as many instructions as you want into your `<script>` element (and many `<script>` element as you want):
 
-## Examples (from jsFiddle, in progress)
+## Examples ([Original](http://uilang.com/))
 
 * [jsFiddle: Simple notification banner](http://jsfiddle.net/q90pg96k/)
 * [jsFiddle: Animated switch] (http://jsfiddle.net/nxLp5wv6/)
@@ -78,7 +78,7 @@ You can add as many instructions as you want into your `<script>` element (and m
 
 ## Examples (for original uilang)
 
-* [Simple gallery](http://demos.uilang.com/gallery/)
+* [jsFiddle: Simple gallery](http://jsfiddle.net/oho4b949/) [Original] (http://demos.uilang.com/gallery/)
 * [Hamburger menu](http://demos.uilang.com/hamburger-menu/)
 * [Looping Keynote-like presentation](http://demos.uilang.com/keynote/)
 * [Sliding panels](http://demos.uilang.com/sliding-panels/)
