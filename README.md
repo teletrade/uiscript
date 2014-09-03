@@ -70,15 +70,15 @@ You can add as many instructions as you want into your `<script>` element (and m
 ## Examples ([Original](http://uilang.com/))
 
 * [jsFiddle: Simple notification banner](http://jsfiddle.net/L9kaoo62/)
-* [jsFiddle: Animated switch] (http://jsfiddle.net/nxLp5wv6/)
-* [jsFiddle: Navigation popover] (http://jsfiddle.net/rqeypoxe/)
-* [jsFiddle: Tabs] (http://jsfiddle.net/9r52k3kf/)
-* [jsFiddle: Accordion] (http://jsfiddle.net/oez7qh3d/)
-* [jsFiddle: Overlay] (http://jsfiddle.net/3gmkkzes/)
+* [jsFiddle: Animated switch] (http://jsfiddle.net/cm6uow15/)
+* [jsFiddle: Navigation popover] (http://jsfiddle.net/tdwtLjbd/)
+* [jsFiddle: Tabs] (http://jsfiddle.net/mmfxn9fj/)
+* [jsFiddle: Accordion] (http://jsfiddle.net/2czv6sL6/)
+* [jsFiddle: Overlay] (http://jsfiddle.net/mgn5ryjq/)
 
 ## Demos
 
-* [jsFiddle: Simple gallery](http://jsfiddle.net/oho4b949/) ([Original] (http://demos.uilang.com/gallery/))
-* [jsFiddle: Hamburger menu](http://jsfiddle.net/d5bxb5ac/) ([Original] (http://demos.uilang.com/hamburger-menu/))
-* [jsFiddle: Looping Keynote-like presentation](http://jsfiddle.net/qznt3ohd/) ([Original] (http://demos.uilang.com/keynote/))
-* [jsFiddle: Sliding panels](http://jsfiddle.net/3k5v96dg/) ([Original] (http://demos.uilang.com/sliding-panels/))
+* [jsFiddle: Simple gallery](http://jsfiddle.net/8n9hwrbj/) ([Original] (http://demos.uilang.com/gallery/))
+* [jsFiddle: Hamburger menu](http://jsfiddle.net/8xnp67g7/) ([Original] (http://demos.uilang.com/hamburger-menu/))
+* [jsFiddle: Looping Keynote-like presentation](http://jsfiddle.net/jf2Lxpat/) ([Original] (http://demos.uilang.com/keynote/))
+* [jsFiddle: Sliding panels](http://jsfiddle.net/exrjL8pt/) ([Original] (http://demos.uilang.com/sliding-panels/))
