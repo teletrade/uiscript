@@ -48,7 +48,7 @@ Comments is also supported:
 ## Fork changelog
 
 - [x] move `<code>` to `<script>`
-- [x] change `<--comments-->` to `//comments`
+- [x] change `<!--comments-->` to `//comments`
 - [x] change syntax to rx-style `on {event} "{source}" {action} {attribute} "{value}" to "{target}"`
 - [x] support multiple class values
 - [ ] adds support for more events and actions
