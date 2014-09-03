@@ -39,8 +39,8 @@ Syntax is pretty simple:
 You can add as many instructions as you want into your `<script>` element (and many `<script>` element as you want)
 Comments is also supported:
 ```html
-<!-- I'm a comment. -->
 <script type="text/uiscript">
+  <!-- I'm a comment. -->
   on click ".hide" add class "hidden" to "div"
 </script>
 ```
