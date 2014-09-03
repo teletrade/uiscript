@@ -10,6 +10,7 @@
  * var w = '(\\w+)'; // word
  * var v = '"([^"]+)"'; // value
  * var regexp = new RegExp('on' + s + e + s + v + s + w + s + w + s + v + '(?:' + s + 'to' + s + v + ')?');
+ * var simple = /on\s+(\w+)\s+"([^"]+)"\s+(\w+)\s+(\w+)\s+"([^"]+)"(?:\s+to\s+"([^"]+)")?/;
  */
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -21,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function toObject(keys, values) {
         return keys.reduce(function (obj, key, index) {
-            return obj[key] = values[index], obj
+            return obj[key] = values[index].replace(/^"|"$/g, ""), obj
         }, {})
     }
     
@@ -38,13 +39,16 @@ document.addEventListener("DOMContentLoaded", function () {
         var defaults = { "double click": "dblclick" };
     
         return events.split(",").reduce(function (obj, event) {
-            return obj[event] = event.replace(/\s+/, ''), obj
+            return obj[event] = event.replace(/\s+/g, ''), obj
         }, defaults);
     }
 
     function parse(instruction) {
         var keys = "event source action attribute value target";
-        var regexp = /on\s+(\w+)\s+"([^"]+)"\s+(\w+)\s+(\w+)\s+"([^"]+)"(?:\s+to\s+"([^"]+)")?/;
+        var s = '\\s+'; // space
+        var w = '(\\w+)'; // word
+        var v = '([^\\s]+|"[^"]+")'; // value
+        var regexp = new RegExp('on' + s + w + s + v + s + w + s + w + s + v + '(?:' + s + 'to' + s + v + ')?');
         var values = regexp.exec(instruction);
         if (!values) throw new Error("Invalid instruction '" + instruction + "'")
         return toObject(keys.split(" "), values.slice(1))
