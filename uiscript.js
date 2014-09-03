@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
         var clipboardEvents = "copy,cut,paste";
         var printEvents = "after print,before print";
         var mediaEvents = "can play,can play through,duration change,emptied,ended,loaded data,loaded metadata,load start,pause,play,playing,progress,rate change,seeked,seeking,stalled,suspend,time update,volume change,waiting";
-        var events = [mouseEvents, keyboardEvents, objectEvents, formEvents, clipboardEvents, printEvents, mediaEvents].join(",");
+        var events = [mouseEvents, keyboardEvents, formEvents].join(",");
         
         var defaults = { "double click": "dblclick" };
     
