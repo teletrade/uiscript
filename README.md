@@ -69,7 +69,9 @@ You can add as many instructions as you want into your `<script>` element (and m
 
 ## Examples (from jsFiddle, in progress)
 
-* [Simple notification banner](http://jsfiddle.net/q90pg96k/)
+* [jsFiddle: Simple notification banner](http://jsfiddle.net/q90pg96k/)
+
+<iframe width="100%" height="300" src="http://jsfiddle.net/q90pg96k/embedded/" frameborder="0"></iframe>
 
 ## Examples (for original uilang)
 
