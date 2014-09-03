@@ -16,6 +16,7 @@ You're now ready to write some uiscript. Your code should be inserted in a `<scr
 <script type="text/uiscript">
   on click "#source" add class "hidden" to ".target"
 </script>
+```
 
 ## Fork changelog
 
@@ -37,7 +38,6 @@ You're now ready to write some uiscript. Your code should be inserted in a `<scr
         'form submit': 'submit'
       }
 
-```
 ## Syntax
 
 Let's deconstruct the syntax from our previous example:
