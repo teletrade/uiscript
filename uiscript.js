@@ -2,6 +2,9 @@
  * uiscript v0.1
  * on {event} "{source}" {action} {attribute} "{value}" to "{target}"
  *
+ * var events = Object.getOwnPropertyNames(document).filter(function (e) {
+ *   return !e.indexOf('on') && (document[e] == null || typeof document[e] == 'function')  
+ * }) // ondblclick, etc.
  * var s = '\\s+'; // space
  * var e = '(' + Object.keys(events).join('|') + ')'; // events
  * var w = '(\\w+)'; // word
