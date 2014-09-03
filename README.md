@@ -35,8 +35,9 @@ or simple
 Syntax is pretty simple:
 
 ```html
-  on {event} "{source}" {action} {attribute} "{value}"
-  on {event} "{source}" {action} {attribute} "{value}" to "{target}"
+  on {event} {source} {action} {attribute} {value} // short syntax
+  on {event} {source} {action} {attribute} {value} to {target} // full syntax
+  on {event} "{source}, {source}" {action} {attribute} "{value} {value}" to "{target}, {target}" // multi-value syntax
 ```
 1. Support different events: click (other in progress)
 2. Source is any CSS selector.
