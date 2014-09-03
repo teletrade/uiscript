@@ -19,18 +19,19 @@ document.addEventListener("DOMContentLoaded", function () {
  * var s = '\\s+'; // space
  * var w = '(\\w+)'; // word
  * var v = '"([^"]+)"'; // value
- * var regexp = new RegExp('on' + s + w + s + v + s + w + s + w + s + v + '(?:' + s + 'to' + s + v + ')?'); 
+ * var regexp = new RegExp('on' + s + w + s + v + s + w + s + w + s + v + '(?:' + s + 'to' + s + v + ')?');
+ * on {event} "{source}" {action} {attribute} "{value}" to "{target}"
  */
     function parse(text) {
+        if (!text) return;
         var keys = "event source action attribute value target";
         var regexp = /on\s+(\w+)\s+"([^"]+)"\s+(\w+)\s+(\w+)\s+"([^"]+)"(?:\s+to\s+"([^"]+)")?/;
-        var values = regexp.exec(text) || [];
+        var values = regexp.exec(text);
+        if (!values) throw new Error("Invalid instruction '" + text + "'")
         return toObject(keys.split(" "), values.slice(1))
     }
 
-    function instruction(text) {
-        var params = parse(text);
-      
+    function evaluate(params) {
         function update(element) {
             switch (params.attribute) {
                 case "class":
@@ -45,16 +46,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
         forEach(params.source, function (element) {
             element.addEventListener(params.event, function (event) {
-                switch (params.target) {
-                    case undefined:
-                        update(event.target);
-                        break;
-                    default:
-                        forEach(params.target, update);
-                        break;
-                }
                 if (event.target.nodeName == "A") {
                     event.preventDefault();
+                }
+                if (!params.target) {
+                    update(event.target); 
+                } else {
+                    forEach(params.target, update);
                 }
             })
         })
@@ -62,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     forEach('script[type="text/uiscript"]', function (script) {
         script.text.trim().split("\n").forEach(function (line) {
-            instruction(line.trim())
+            evaluate(parse(line.trim()))
         })
     })
 })
