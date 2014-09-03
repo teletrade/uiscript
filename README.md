@@ -1,7 +1,9 @@
 # uiscript (fork from [uilang](https://github.com/bendc/uilang))
 
-uiscript is a simple programming language for web designers, write your code like plain English.
-It is event-driven: when a click occurs you can change CSS classes and show, hide, animate and transform elements.
+uiscript is a simple event-driven language for web designers, just write your code in plain English.
+
+When click occurs change CSS classes to show, hide, animate and transform elements.
+
 This simple logic lets you create most of the typical user interface behaviours: tabs, popovers, overlays, sliding menus, etc.
 
 ## Getting started
