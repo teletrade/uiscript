@@ -8,7 +8,7 @@ This simple logic lets you create most of the typical behaviours: tabs, popovers
 
 ## Getting started
 
-Include `uiscript.js` or `uiscript.min.js` on your page (it's less than 1 KB):
+Include [uiscript.js](https://rawgit.com/qweek/uiscript/master/uiscript.js) or [uiscript.min.js](https://rawgit.com/qweek/uiscript/master/uiscript.min.js) on your page (it's less than 1 KB):
 
 ```html
 <script src="uiscript.js"></script>
