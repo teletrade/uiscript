@@ -22,20 +22,20 @@ document.addEventListener("DOMContentLoaded", function () {
  * var regexp = new RegExp('on' + s + w + s + v + s + w + s + w + s + v + '(?:' + s + 'to' + s + v + ')?'); 
  */
     function parse(text) {
-        var keys = ["event", "source", "reaction", "attribute", "value", "target"];
+        var keys = "event source action attribute value target";
         var regexp = /on\s+(\w+)\s+"([^"]+)"\s+(\w+)\s+(\w+)\s+"([^"]+)"(?:\s+to\s+"([^"]+)")?/;
         var values = regexp.exec(text) || [];
-        return toObject(keys, values.slice(1))
+        return toObject(keys.split(" "), values.slice(1))
     }
 
     function instruction(text) {
         var params = parse(text);
       
-        function react(element) {
+        function update(element) {
             switch (params.attribute) {
                 case "class":
                     params.value.split(" ").forEach(function (value) {
-                      element.classList[params.reaction](value);
+                      element.classList[params.action](value);
                     });
                     break;
                 default:
@@ -47,10 +47,10 @@ document.addEventListener("DOMContentLoaded", function () {
             element.addEventListener(params.event, function (event) {
                 switch (params.target) {
                     case undefined:
-                        react(event.target);
+                        update(event.target);
                         break;
                     default:
-                        forEach(params.target, react);
+                        forEach(params.target, update);
                         break;
                 }
                 if (event.target.nodeName == "A") {
