@@ -21,6 +21,7 @@ You're now ready to write some uiscript. Your code should be inserted in a `<scr
 ## Fork changelog
 
 1. Adds support for events
+```html
     var events = { 
         'click': 'click', 
         'context menu': 'contextmenu',
@@ -37,6 +38,7 @@ You're now ready to write some uiscript. Your code should be inserted in a `<scr
         'form reset': 'reset',
         'form submit': 'submit'
       }
+```
 
 ## Syntax
 
