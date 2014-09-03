@@ -24,7 +24,7 @@ You're now ready to write some uiscript. Your code should be inserted in a `<scr
 
 - [x] change syntax to rx-style `on {action} "{source}" {reaction} {attribute} "{value}" to "{target}"`
 
-- [x] support multiple classes
+- [x] support multiple class values
 
 - [ ] adds support for events
 
