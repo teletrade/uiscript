@@ -15,6 +15,12 @@ document.addEventListener("DOMContentLoaded", function () {
         }, {})
     }
 
+/**
+ * var s = '\\s+'; // space
+ * var w = '(\\w+)'; // word
+ * var v = '"([^"]+)"'; // value
+ * var regexp = new RegExp('on' + s + w + s + v + s + w + s + w + s + v + '(?:' + s + 'to' + s + v + ')?'); 
+ */
     function parse(text) {
         var keys = ["event", "source", "reaction", "attribute", "value", "target"];
         var regexp = /on\s+(\w+)\s+"([^"]+)"\s+(\w+)\s+(\w+)\s+"([^"]+)"(?:\s+to\s+"([^"]+)")?/;
