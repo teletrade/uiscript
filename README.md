@@ -78,7 +78,7 @@ You can add as many instructions as you want into your `<script>` element (and m
 
 ## Examples (for original uilang)
 
-* [jsFiddle: Simple gallery](http://jsfiddle.net/oho4b949/) [Original] (http://demos.uilang.com/gallery/)
+* [jsFiddle: Simple gallery](http://jsfiddle.net/oho4b949/) ([Original] (http://demos.uilang.com/gallery/))
 * [Hamburger menu](http://demos.uilang.com/hamburger-menu/)
 * [Looping Keynote-like presentation](http://demos.uilang.com/keynote/)
 * [Sliding panels](http://demos.uilang.com/sliding-panels/)
