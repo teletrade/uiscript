@@ -27,8 +27,8 @@ Insert a `<script>` element with a `type="text/uiscript"` attribute. Write some 
 Syntax is pretty simple:
 
 ```html
-  on {event} "{source}" {reaction} {attribute} "{value}"
-  on {event} "{source}" {reaction} {attribute} "{value}" to "{target}"
+  on {event} "{source}" {action} {attribute} "{value}"
+  on {event} "{source}" {action} {attribute} "{value}" to "{target}"
 ```
 1. Support different events: click (other in progress)
 2. Source is any CSS selector.
@@ -49,11 +49,11 @@ Comments is also supported:
 
 - [x] move `<code>` to `<script>`
 
-- [x] change syntax to rx-style `on {event} "{source}" {reaction} {attribute} "{value}" to "{target}"`
+- [x] change syntax to rx-style `on {event} "{source}" {action} {attribute} "{value}" to "{target}"`
 
 - [x] support multiple class values
 
-- [ ] adds support for more events and reactions
+- [ ] adds support for more events and actions
 
 ```html
     var events = { 
