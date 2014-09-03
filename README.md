@@ -73,7 +73,7 @@ You can add as many instructions as you want into your `<script>` element (and m
 * [jsFiddle: Animated switch] (http://jsfiddle.net/nxLp5wv6/)
 * [jsFiddle: Navigation popover] (http://jsfiddle.net/rqeypoxe/)
 * [jsFiddle: Tabs] (http://jsfiddle.net/9r52k3kf/)
-* [jsFiddle: Accordion] ()
+* [jsFiddle: Accordion] (http://jsfiddle.net/oez7qh3d/)
 * [jsFiddle: Overlay] ()
 
 ## Examples (for original uilang)
