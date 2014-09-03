@@ -40,7 +40,7 @@ You can add as many instructions as you want into your `<script>` element (and m
 Comments is also supported:
 ```html
 <script type="text/uiscript">
-  <!-- I'm a comment. -->
+  // I'm a comment.
   on click ".hide" add class "hidden" to "div"
 </script>
 ```
