@@ -80,7 +80,7 @@ var defaults = { "double click": "dblclick" };
 - [ ] pre-calculate params before addEventListener
 - [ ] aliases for add(+), remove(-), toggle(!), to(at, @)
 - [ ] alter syntax
-  - event source (at target) action property value
+  - on? {event} {source} at? {target}? {action} {property} {value}
   - click #source at #source add class hidden
   - click #source @ #source + class hidden
   - click #source + class hidden
