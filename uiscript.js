@@ -1,6 +1,6 @@
 /*
  * uiscript v0.1
- * on {event} "{source}" {action} {attribute} "{value}" to "{target}"
+ * on {event} "{source}" {action} {at} "{value}" to "{target}"
  *
  * var events = Object.getOwnPropertyNames(document).filter(function (e) {
  *   return !e.indexOf('on') && (document[e] == null || typeof document[e] == 'function')  
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function parse(instruction) {
-        var keys = "event source action attribute value target";
+        var keys = "event source action property value target";
         var s = '\\s+'; // space
         var w = '(\\w+)'; // word
         var v = '([^\\s]+|"[^"]+")'; // value
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
         var params = parse(text);
          
         function update(element) {
-            switch (params.attribute) {
+            switch (params.property) {
                 case "class":
                     params.value.split(" ").forEach(function (value) {
                       element.classList[params.action](value);
