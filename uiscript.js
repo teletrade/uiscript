@@ -1,6 +1,6 @@
 /*
  * uiscript v0.1
- * on {event} "{source}" {action} {at} "{value}" to "{target}"
+ * on {event} "{source}" {action} {property} "{value}" to "{target}"
  *
  * var events = Object.getOwnPropertyNames(document).filter(function (e) {
  *   return !e.indexOf('on') && (document[e] == null || typeof document[e] == 'function')  
