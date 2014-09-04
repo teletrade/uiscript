@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function toObject(keys, values) {
         return keys.reduce(function (obj, key, index) {
-            return obj[key] = values[index].replace(/^"|"$/g, ""), obj
+            return obj[key] = values[index] && values[index].replace(/^"|"$/g, ""), obj
         }, {})
     }
     
