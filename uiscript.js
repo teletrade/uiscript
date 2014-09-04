@@ -9,7 +9,8 @@
  * var e = '(' + Object.keys(events).join('|') + ')'; // events
  * var w = '(\\w+)'; // word
  * var v = '"([^"]+)"'; // value
- * var regexp = new RegExp('on' + s + e + s + v + s + w + s + w + s + v + '(?:' + s + 'to' + s + v + ')?');
+ * var c = '(?:\\s*//.*)?';
+ * var regexp = new RegExp('on' + s + e + s + v + s + w + s + w + s + v + '(?:' + s + 'to' + s + v + ')?') + c;
  * var simple = /on\s+(\w+)\s+"([^"]+)"\s+(\w+)\s+(\w+)\s+"([^"]+)"(?:\s+to\s+"([^"]+)")?/;
  */
 
