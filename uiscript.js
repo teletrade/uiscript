@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }, {})
     }
     
-    function getEvents() {
+    /* function getEvents() {
         var mouseEvents = "click,context menu,mouse down,mouse enter,mouse leave,mouse move,mouse over,mouse out,mouse up";
         var keyboardEvents = "key down,key press,key up";
         var objectEvents = "abort,error,hash change,load,resize,scroll,unload";
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
         return events.split(",").reduce(function (obj, event) {
             return obj[event] = event.replace(/\s+/g, ''), obj
         }, defaults);
-    }
+    } */
 
     function parse(instruction) {
         var keys = "event source action property value target";
