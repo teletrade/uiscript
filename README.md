@@ -23,10 +23,13 @@ Write some uiscript:
   on click "#source" add class "hidden" to ".target"
 </script>
 ```
-or simple
+or more
+
 ```html
 <script type="text/uiscript">
-  on click #source add class hidden to .target
+  on click ".hide" add class "hidden" to "#notification"
+  on mouseenter #notification add class hover
+  on mouseleave #notification remove class hover
 </script>
 ```
 
