@@ -81,9 +81,12 @@ var defaults = { "double click": "dblclick" };
 - [ ] aliases for add(+), remove(-), toggle(!), to(at, @)
 - [ ] alter syntax
   - on? {event} {source} at? {target}? {action} {property} {value}
-  - click #source at #source add class hidden
-  - click #source @ #source + class hidden
-  - click #source + class hidden
+    - click #source at #source add class hidden
+    - click #source @ #source + class hidden
+    - click #source + class hidden
+  - {event} {source}: {target}? {property} {action} {value}
+    - click #source: #target class + hidden
+    - click #source: class + hidden
 
 ## Examples ([original](http://uilang.com/))
 
