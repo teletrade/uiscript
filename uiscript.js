@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
         var keys = "event source action property value target";
         var s = '\\s+'; // space
         var w = '(\\w+)'; // word
-        var v = '([^\\s]+|"[^"]+")'; // value
+        var v = '("[^"]+"|[^\\s]+)'; // value
         var regexp = new RegExp('on' + s + w + s + v + s + w + s + w + s + v + '(?:' + s + 'to' + s + v + ')?');
         var values = regexp.exec(instruction);
         if (!values) throw new Error("Invalid instruction '" + instruction + "'")
