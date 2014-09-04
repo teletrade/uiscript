@@ -27,18 +27,18 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     
     /* function getEvents() {
-        var mouseEvents = "click,context menu,mouse down,mouse enter,mouse leave,mouse move,mouse over,mouse out,mouse up";
-        var keyboardEvents = "key down,key press,key up";
-        var objectEvents = "abort,error,hash change,load,resize,scroll,unload";
-        var formEvents = "blur,change,focus,focus in,focus out,input,reset,search,select,submit";
-        var clipboardEvents = "copy,cut,paste";
-        var printEvents = "after print,before print";
-        var mediaEvents = "can play,can play through,duration change,emptied,ended,loaded data,loaded metadata,load start,pause,play,playing,progress,rate change,seeked,seeking,stalled,suspend,time update,volume change,waiting";
-        var events = [mouseEvents, keyboardEvents, formEvents].join(",");
+        var mouseEvents = "click|context menu|mouse down|mouse enter|mouse leave|mouse move|mouse over|mouse out|mouse up";
+        var keyboardEvents = "key down|key press|key up";
+        var objectEvents = "abort|error|hash change|load|resize|scroll|unload";
+        var formEvents = "blur|change|focus|focus in|focus out|input|reset|search|select|submit";
+        var clipboardEvents = "copy|cut|paste";
+        var printEvents = "after print|before print";
+        var mediaEvents = "can play|can play through|duration change|emptied|ended|loaded data|loaded metadata|load start|pause|play|playing|progress|rate change|seeked|seeking|stalled|suspend|time update|volume change|waiting";
+        var events = [mouseEvents, keyboardEvents, formEvents].join("|");
         
         var defaults = { "double click": "dblclick" };
     
-        return events.split(",").reduce(function (obj, event) {
+        return events.split("|").reduce(function (obj, event) {
             return obj[event] = event.replace(/\s+/g, ''), obj
         }, defaults);
     } */
