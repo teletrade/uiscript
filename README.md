@@ -35,14 +35,14 @@ or simple
 Syntax is pretty simple:
 
 ```html
-  on {event} {source} {action} {attribute} {value} // short syntax
-  on {event} {source} {action} {attribute} {value} to {target} // full syntax
-  on {event} "{source}, {source}" {action} {attribute} "{value} {value}" to "{target}, {target}" // multi-value syntax
+  on {event} {source} {action} {property} {value} // short syntax
+  on {event} {source} {action} {property} {value} to {target} // full syntax
+  on {event} "{source}, {source}" {action} {property} "{value} {value}" to "{target}, {target}" // multi-value syntax
 ```
 1. Support different events: click (other in progress)
 2. Source is any CSS selector.
 3. Support simple class manipulations `add`, `remove` or `toggle` (other in progress)
-4. Support different attributes: class (other planned)
+4. Support different properties: class (other planned)
 5. Target is any CSS selector or nothing (which apply reaction to current element)
 
 You can add as many instructions as you want into your `<script>` element (and many `<script>` element as you want)
@@ -58,7 +58,7 @@ Comments is also supported:
 
 - [x] move `<code>` to `<script>`
 - [x] change `<!--comments-->` to `//comments`
-- [x] change syntax to rx-style `on {event} "{source}" {action} {attribute} "{value}" to "{target}"`
+- [x] change syntax to rx-style `on {event} "{source}" {action} {property} "{value}" to "{target}"`
 - [x] support multiple class values
 - [x] optional quotes in syntax
 - [ ] adds support for more events and actions
@@ -72,8 +72,8 @@ var printEvents = "after print,before print";
 var mediaEvents = "can play,can play through,duration change,emptied,ended,loaded data,loaded metadata,load start,pause,play,playing,progress,rate change,seeked,seeking,stalled,suspend,time update,volume change,waiting";
 var defaults = { "double click": "dblclick" };
 ```
-- [ ] add support to other attributes
-- [ ] optional values for attributes
+- [ ] add support to other properties
+- [ ] optional values for properties
 
 ## Examples ([original](http://uilang.com/))
 
