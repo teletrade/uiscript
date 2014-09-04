@@ -78,6 +78,7 @@ var defaults = { "double click": "dblclick" };
 - [ ] add support to other properties
 - [ ] optional values for properties
 - [ ] pre-calculate params before addEventListener
+- [ ] aliases for add(+), remove(-), toggle(!), to(at, @)
 
 ## Examples ([original](http://uilang.com/))
 
