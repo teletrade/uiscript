@@ -87,6 +87,11 @@ var defaults = { "double click": "dblclick" };
   - {event} {source}: {target}? {property} {action} {value}
     - click #source: #target class + hidden
     - click #source: class + hidden
+  - default "class" attribute with ".class" value
+    - click #source: + .hidden
+    - click #source: #target + .hidden
+    - click #source: + checked // attribute
+    - click #source: + checked checked // attribute checked="checked"
 
 ## Examples ([original](http://uilang.com/))
 
