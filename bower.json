@@ -1,0 +1,28 @@
+{
+  "name": "uiscript",
+  "description": "uiscript is a simple event-driven language for web designers (fork from uilang).",
+  "version": "0.2.0",
+  "main": "uiscript.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "keywords": [
+    "ui",
+    "script",
+    "css",
+    "language"
+  ],
+  "authors": [
+    "Benjamin De Cock <ben@deaxon.com>"
+  ],
+  "homepage": "https://github.com/qweek/uiscript",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/qweek/uiscript.git"
+  }
+}
