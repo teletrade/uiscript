@@ -112,7 +112,7 @@ var defaults = { "double click": "dblclick" };
 
 ## Demos
 
-* [jsFiddle: Simple gallery](http://jsfiddle.net/8n9hwrbj/1/) ([original] (http://demos.uilang.com/gallery/))
-* [jsFiddle: Hamburger menu](http://jsfiddle.net/8xnp67g7/1/) ([original] (http://demos.uilang.com/hamburger-menu/))
+* [jsFiddle: Simple gallery](http://jsfiddle.net/5odp2zas/) ([original] (http://demos.uilang.com/gallery/))
+* [jsFiddle: Hamburger menu](http://jsfiddle.net/3djy86w0/) ([original] (http://demos.uilang.com/hamburger-menu/))
 * [jsFiddle: Looping Keynote-like presentation](http://jsfiddle.net/jf2Lxpat/1/) ([original] (http://demos.uilang.com/keynote/))
 * [jsFiddle: Sliding panels](http://jsfiddle.net/exrjL8pt/1/) ([original] (http://demos.uilang.com/sliding-panels/))
