@@ -102,17 +102,17 @@ var defaults = { "double click": "dblclick" };
 
 ## Examples ([original](http://uilang.com/))
 
-* [jsFiddle: Simple notification banner](http://jsfiddle.net/L9kaoo62/)
-* [jsFiddle: Simple notification banner with mouseenter, mouseleave](http://jsfiddle.net/Lw7kxLbb/)
-* [jsFiddle: Animated switch] (http://jsfiddle.net/cm6uow15/)
-* [jsFiddle: Navigation popover] (http://jsfiddle.net/tdwtLjbd/)
-* [jsFiddle: Tabs] (http://jsfiddle.net/3bjoyk49/)
-* [jsFiddle: Accordion] (http://jsfiddle.net/f1qjj6L5/)
-* [jsFiddle: Overlay] (http://jsfiddle.net/mgn5ryjq/)
+* [jsFiddle: Simple notification banner](http://jsfiddle.net/L9kaoo62/1/)
+* [jsFiddle: Simple notification banner with mouseenter, mouseleave](http://jsfiddle.net/Lw7kxLbb/1/)
+* [jsFiddle: Animated switch] (http://jsfiddle.net/cm6uow15/1/)
+* [jsFiddle: Navigation popover] (http://jsfiddle.net/tdwtLjbd/1/)
+* [jsFiddle: Tabs] (http://jsfiddle.net/3bjoyk49/1/)
+* [jsFiddle: Accordion] (http://jsfiddle.net/f1qjj6L5/1/)
+* [jsFiddle: Overlay] (http://jsfiddle.net/mgn5ryjq/1/)
 
 ## Demos
 
-* [jsFiddle: Simple gallery](http://jsfiddle.net/8n9hwrbj/) ([original] (http://demos.uilang.com/gallery/))
-* [jsFiddle: Hamburger menu](http://jsfiddle.net/8xnp67g7/) ([original] (http://demos.uilang.com/hamburger-menu/))
-* [jsFiddle: Looping Keynote-like presentation](http://jsfiddle.net/jf2Lxpat/) ([original] (http://demos.uilang.com/keynote/))
-* [jsFiddle: Sliding panels](http://jsfiddle.net/exrjL8pt/) ([original] (http://demos.uilang.com/sliding-panels/))
+* [jsFiddle: Simple gallery](http://jsfiddle.net/8n9hwrbj/1/) ([original] (http://demos.uilang.com/gallery/))
+* [jsFiddle: Hamburger menu](http://jsfiddle.net/8xnp67g7/1/) ([original] (http://demos.uilang.com/hamburger-menu/))
+* [jsFiddle: Looping Keynote-like presentation](http://jsfiddle.net/jf2Lxpat/1/) ([original] (http://demos.uilang.com/keynote/))
+* [jsFiddle: Sliding panels](http://jsfiddle.net/exrjL8pt/1/) ([original] (http://demos.uilang.com/sliding-panels/))
