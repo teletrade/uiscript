@@ -74,10 +74,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
         forEach(params.source, function (element) {
             element.addEventListener(params.event, function (event) {
-                if (!params.target) {
-                    update(event.target); 
-                } else {
-                    forEach(params.target, update);
+                switch (params.target) {
+                    case undefined:
+                        update(event.target);
+                        break;
+                    case "parent":
+                        update(event.target.parentNode);
+                        break;
+                    default:
+                        forEach(params.target, update);
                 }
                 if (event.target.nodeName == "A") {
                     event.preventDefault();
