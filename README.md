@@ -98,6 +98,7 @@ var defaults = { "double click": "dblclick" };
     - click #source: + checked checked // attribute checked="checked"
   - on {source} {event} {target}? {action} {property} {value}
     - on #source click + .hidden
+- [ ] add js api
 
 ## Examples ([original](http://uilang.com/))
 
