@@ -103,7 +103,7 @@ var defaults = { "double click": "dblclick" };
 ## Examples ([original](http://uilang.com/))
 
 * [jsFiddle: Simple notification banner](http://jsfiddle.net/L9kaoo62/1/)
-* [jsFiddle: Simple notification banner with mouseenter, mouseleave](http://jsfiddle.net/Lw7kxLbb/1/)
+* [jsFiddle: Simple notification banner with mouseenter, mouseleave](http://jsfiddle.net/f2g60hdu/)
 * [jsFiddle: Animated switch] (http://jsfiddle.net/cm6uow15/1/)
 * [jsFiddle: Navigation popover] (http://jsfiddle.net/tdwtLjbd/1/)
 * [jsFiddle: Tabs] (http://jsfiddle.net/3bjoyk49/1/)
