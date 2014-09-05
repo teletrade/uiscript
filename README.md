@@ -1,4 +1,4 @@
-# uiscript (fork from [uilang](https://github.com/bendc/uilang))
+# uiscript 0.2 (fork from [uilang](https://github.com/bendc/uilang))
 
 uiscript is a simple event-driven language for web designers, just write your code in plain English.
 
@@ -64,6 +64,8 @@ Comments is also supported:
 - [x] change syntax to rx-style `on {event} "{source}" {action} {property} "{value}" to "{target}"`
 - [x] support multiple class values
 - [x] optional quotes in syntax
+- [x] add 'parent' target (https://github.com/bendc/uilang/pull/13/files)
+  - [ ] add support for multiple ':parent' selector (http://api.jquery.com/parent-selector/)
 - [ ] adds support for more events and actions
 ```html
 var mouseEvents = "click,context menu,mouse down,mouse enter,mouse leave,mouse move,mouse over,mouse out,mouse up";
