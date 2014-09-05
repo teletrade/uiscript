@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function () {
         })
     }
 
-    forEach('script[type="text/uiscript"]', function (script) {
+    forEach('script[type="text/x-uiscript"]', function (script) {
         script.text.trim().split("\n").forEach(function (line) {
             evaluate(line.trim())
         })
