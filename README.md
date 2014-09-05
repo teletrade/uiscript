@@ -65,6 +65,7 @@ Comments is also supported:
 - [x] support multiple class values
 - [x] optional quotes in syntax
 - [x] add 'parent' target (https://github.com/bendc/uilang/pull/13/files)
+- [x] add bower support (https://github.com/bendc/uilang/pull/2)
   - [ ] add support for multiple ':parent' selector (http://api.jquery.com/parent-selector/)
 - [ ] adds support for more events and actions
 ```html
