@@ -65,8 +65,8 @@ Comments is also supported:
 - [x] support multiple class values
 - [x] optional quotes in syntax
 - [x] add 'parent' target (https://github.com/bendc/uilang/pull/13/files)
-- [x] add bower support (https://github.com/bendc/uilang/pull/2)
   - [ ] add support for multiple ':parent' selector (http://api.jquery.com/parent-selector/)
+- [x] add bower support (https://github.com/bendc/uilang/pull/2)
 - [ ] adds support for more events and actions
 ```html
 var mouseEvents = "click,context menu,mouse down,mouse enter,mouse leave,mouse move,mouse over,mouse out,mouse up";
