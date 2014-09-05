@@ -14,19 +14,19 @@ Include [uiscript.js](https://rawgit.com/qweek/uiscript/master/uiscript.js) or [
 <script src="uiscript.js"></script>
 ```
 
-Insert a `<script>` element with a `type="text/uiscript"` attribute.
+Insert a `<script>` element with a `type="text/x-uiscript"` attribute.
 
 Write some uiscript:
 
 ```html
-<script type="text/uiscript">
+<script type="text/x-uiscript">
   on click "#source" add class "hidden" to ".target"
 </script>
 ```
 or more
 
 ```html
-<script type="text/uiscript">
+<script type="text/x-uiscript">
   on click ".hide" add class "hidden" to "#notification"
   on mouseenter #notification add class hover
   on mouseleave #notification remove class hover
@@ -51,7 +51,7 @@ Syntax is pretty simple:
 You can add as many instructions as you want into your `<script>` element (and many `<script>` element as you want)
 Comments is also supported:
 ```html
-<script type="text/uiscript">
+<script type="text/x-uiscript">
   // I'm a comment.
   on click ".hide" add class "hidden" to "div"
 </script>
@@ -67,6 +67,7 @@ Comments is also supported:
 - [x] add 'parent' target (https://github.com/bendc/uilang/pull/13/files)
   - [ ] add support for multiple ':parent' selector (http://api.jquery.com/parent-selector/)
 - [x] add bower support (https://github.com/bendc/uilang/pull/2)
+- [x] change script type to custom `type="text/x-uiscript"`
 - [ ] adds support for more events and actions
 ```html
 var mouseEvents = "click,context menu,mouse down,mouse enter,mouse leave,mouse move,mouse over,mouse out,mouse up";
